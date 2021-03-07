@@ -16,46 +16,45 @@
       </div>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-none d-md-flex">
-        <v-btn v-scroll-to="'#home'" text tile>
-          <span class="mr-2">home</span>
-        </v-btn>
+        <router-link to="/">
+          <v-btn small v-scroll-to="'#home'" text tile>
+            <span class="mr-2">home</span>
+          </v-btn></router-link
+        >
         <router-link to="/executive-air-charter"
-          ><v-btn text tile>
-            <span class="mr-2">Executive </span>
+          ><v-btn text tile small>
+            <span class="mr-2">Executive air charter </span>
           </v-btn>
         </router-link>
         <router-link to="/float-plane-services"
-          ><v-btn text tile>
-            <span class="mr-2">Float </span>
+          ><v-btn text tile small>
+            <span class="mr-2">Float plane services</span>
           </v-btn>
         </router-link>
-        
+
         <router-link to="/home-security"
-          ><v-btn text tile>
-            <span class="mr-2">Home Security </span>
+          ><v-btn text tile small>
+            <span class="mr-2">Home Security</span>
           </v-btn>
         </router-link>
         <router-link to="/our-photo-gallery"
-          ><v-btn text tile>
+          ><v-btn text tile small>
             <span class="mr-2">Our Photo Gallery</span>
           </v-btn>
         </router-link>
         <router-link to="/request-a-quote"
-          ><v-btn text tile>
-            <span class="mr-2">Request</span>
-            
+          ><v-btn text tile small>
+            <span class="mr-2">Request a quote</span>
           </v-btn>
         </router-link>
         <router-link to="/scenic-flights"
-          ><v-btn text tile>
+          ><v-btn text tile small>
             <span class="mr-2">Scenic Flights</span>
-            
           </v-btn>
         </router-link>
         <router-link to="/track"
-          ><v-btn text tile>
+          ><v-btn text tile small>
             <span class="mr-2">Track</span>
-            
           </v-btn>
         </router-link>
       </div>
