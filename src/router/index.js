@@ -6,6 +6,8 @@ const floatPlaneServices = () => import("../views/floatPlaneServices.vue");
 const HomeSecurity = () => import("../views/HomeSecurity.vue");
 const ourPhotoGallery = () => import("../views/OurPhotoGallery.vue");
 const RequestAQuote = () => import("../views/RequestAQuote.vue");
+const scenicFlight = () => import("../views/ScenicFlight.vue");
+
 
 Vue.use(VueRouter);
 
@@ -33,6 +35,10 @@ const routes = [
   {
     path: "/request-a-quote",
     component: RequestAQuote,
+  },
+  {
+    path: "/scenic-flights",
+    component: scenicFlight,
   },
 ];
 

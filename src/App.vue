@@ -43,6 +43,13 @@
         <router-link to="/request-a-quote"
           ><v-btn text tile>
             <span class="mr-2">Request</span>
+            
+          </v-btn>
+        </router-link>
+        <router-link to="/scenic-flights"
+          ><v-btn text tile>
+            <span class="mr-2">Scenic Flights</span>
+            
           </v-btn>
         </router-link>
       </div>

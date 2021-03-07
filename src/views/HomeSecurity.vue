@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-xs>
     <v-row>
-      <v-col cols="10" md="">
+      <v-col cols="10">
         <h1>on the move ?</h1>
         <v-img
           src="https://camronservice.world/n58cc9djl3c5/1WMB9YdBzasBU0Ce4csoQP/802e0bbb559e900c8735dd21dd367457/moves-program-Banners.jpg"
@@ -25,7 +25,7 @@
           </p>
         </v-img></v-col
       >
-      <v-col>
+      <v-col cols="12">
         <h1>Browse our suite of solutions</h1>
 
         <v-row>
