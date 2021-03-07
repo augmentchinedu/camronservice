@@ -29,9 +29,20 @@
             <span class="mr-2">Float </span>
           </v-btn>
         </router-link>
+        
         <router-link to="/home-security"
           ><v-btn text tile>
             <span class="mr-2">Home Security </span>
+          </v-btn>
+        </router-link>
+        <router-link to="/our-photo-gallery"
+          ><v-btn text tile>
+            <span class="mr-2">Our Photo Gallery</span>
+          </v-btn>
+        </router-link>
+        <router-link to="/request-a-quote"
+          ><v-btn text tile>
+            <span class="mr-2">Request</span>
           </v-btn>
         </router-link>
       </div>

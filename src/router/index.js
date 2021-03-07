@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 const executiveAirCharter = () => import("../views/ExecutiveAirCharter.vue");
 const floatPlaneServices = () => import("../views/floatPlaneServices.vue");
 const HomeSecurity = () => import("../views/HomeSecurity.vue");
+const ourPhotoGallery = () => import("../views/OurPhotoGallery.vue");
+const RequestAQuote = () => import("../views/RequestAQuote.vue");
 
 Vue.use(VueRouter);
 
@@ -26,7 +28,11 @@ const routes = [
   },
   {
     path: "/our-photo-gallery",
-    component: HomeSecurity,
+    component: ourPhotoGallery,
+  },
+  {
+    path: "/request-a-quote",
+    component: RequestAQuote,
   },
 ];
 
