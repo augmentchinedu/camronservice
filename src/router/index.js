@@ -7,6 +7,7 @@ const HomeSecurity = () => import("../views/HomeSecurity.vue");
 const ourPhotoGallery = () => import("../views/OurPhotoGallery.vue");
 const RequestAQuote = () => import("../views/RequestAQuote.vue");
 const scenicFlight = () => import("../views/ScenicFlight.vue");
+const Track = () => import("../views/Track.vue");
 
 
 Vue.use(VueRouter);
@@ -39,6 +40,10 @@ const routes = [
   {
     path: "/scenic-flights",
     component: scenicFlight,
+  },
+  {
+    path: "/track",
+    component: Track,
   },
 ];
 

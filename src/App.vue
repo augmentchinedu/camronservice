@@ -52,6 +52,12 @@
             
           </v-btn>
         </router-link>
+        <router-link to="/track"
+          ><v-btn text tile>
+            <span class="mr-2">Track</span>
+            
+          </v-btn>
+        </router-link>
       </div>
       <div class="d-xl-none d-md-none">
         <v-menu offset-y>
