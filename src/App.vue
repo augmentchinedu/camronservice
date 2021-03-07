@@ -16,47 +16,11 @@
       </div>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-none d-md-flex">
-        <router-link to="/">
-          <v-btn small v-scroll-to="'#home'" text tile>
-            <span class="mr-2">home</span>
+        <router-link :to="i.link" v-for="i in linksAndRoutes" :key="i">
+          <v-btn small text tile>
+            <span class="mr-2">{{ i.text }}</span>
           </v-btn></router-link
         >
-        <router-link to="/executive-air-charter"
-          ><v-btn text tile small>
-            <span class="mr-2">Executive air charter </span>
-          </v-btn>
-        </router-link>
-        <router-link to="/float-plane-services"
-          ><v-btn text tile small>
-            <span class="mr-2">Float plane services</span>
-          </v-btn>
-        </router-link>
-
-        <router-link to="/home-security"
-          ><v-btn text tile small>
-            <span class="mr-2">Home Security</span>
-          </v-btn>
-        </router-link>
-        <router-link to="/our-photo-gallery"
-          ><v-btn text tile small>
-            <span class="mr-2">Our Photo Gallery</span>
-          </v-btn>
-        </router-link>
-        <router-link to="/request-a-quote"
-          ><v-btn text tile small>
-            <span class="mr-2">Request a quote</span>
-          </v-btn>
-        </router-link>
-        <router-link to="/scenic-flights"
-          ><v-btn text tile small>
-            <span class="mr-2">Scenic Flights</span>
-          </v-btn>
-        </router-link>
-        <router-link to="/track"
-          ><v-btn text tile small>
-            <span class="mr-2">Track</span>
-          </v-btn>
-        </router-link>
       </div>
       <div class="d-xl-none d-md-none">
         <v-menu offset-y>
@@ -66,46 +30,15 @@
             </v-btn>
           </template>
           <v-list class="d-xl-none d-md-none">
-            <v-list-item>
-              <v-btn elevation="0" text v-scroll-to="'#home'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.home }}
-                </v-list-item-title>
-              </v-btn>
-            </v-list-item>
-            <v-list-item>
-              <v-btn elevation="0" text v-scroll-to="'#about'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.about }}
-                </v-list-item-title>
-              </v-btn>
-            </v-list-item>
-            <v-list-item>
-              <v-btn elevation="0" text v-scroll-to="'#expertise'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.expertise }}
-                </v-list-item-title>
-              </v-btn> </v-list-item
-            ><v-list-item>
-              <v-btn elevation="0" text v-scroll-to="'#projects'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.projects }}
-                </v-list-item-title>
-              </v-btn>
-            </v-list-item>
-            <v-list-item v-if="data.team.length !== 0">
-              <v-btn elevation="0" text v-scroll-to="'#team'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.team }}
-                </v-list-item-title>
-              </v-btn> </v-list-item
-            ><v-list-item>
-              <v-btn elevation="0" text v-scroll-to="'#contact'">
-                <v-list-item-title class="text-button font-weight-bold"
-                  >{{ headings.contact }}
-                </v-list-item-title>
-              </v-btn>
-            </v-list-item>
+            <router-link v-for="i in linksAndRoutes" :key="i" :to="i.link"  style="text-decoration: none; color: inherit;">
+              <v-list-item>
+                <v-btn elevation="0" text>
+                  <v-list-item-title class="text-button font-weight-bold">{{
+                    i.text
+                  }}</v-list-item-title>
+                </v-btn>
+              </v-list-item>
+            </router-link>
           </v-list>
         </v-menu>
       </div>
@@ -124,13 +57,15 @@ export default {
   name: "App",
   data: () => ({
     home: "contact",
-    mobileLinks: [
-      { title: "home" },
-      { title: "about" },
-      { title: "expertise" },
-      { title: "projects" },
-      { title: "team" },
-      { title: "contact" },
+    linksAndRoutes: [
+      { link: "/", text: "home" },
+      { link: "/executive-air-charter", text: "executive air charter" },
+      { link: "/float-plane-services", text: "float plane services" },
+      { link: "/home-security", text: "home security" },
+      { link: "/our-photo-gallery", text: "our photo gallery" },
+      { link: "/request-a-quote", text: "request a quote" },
+      { link: "/scenic-flights", text: "scenic flights" },
+      { link: "/track", text: "track" },
     ],
   }),
   methods: {

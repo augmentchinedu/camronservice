@@ -276,9 +276,9 @@
           light
         >
           <div class="text-uppercase">
-            <v-btn text class="mx-2" v-scroll-to="'#home'"> Home </v-btn>
+            <v-btn text class="mx-2"> Home </v-btn>
 
-            <v-btn class="mx-2" v-scroll-to="'#contact'" text>Contact</v-btn>
+            <v-btn class="mx-2">Contact</v-btn>
           </div>
 
           <div class="d-flex">
