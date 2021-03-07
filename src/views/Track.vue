@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="my-6">
     <h1 class="text-uppercase font-weight-black text-center">Track</h1>
     <v-row>
       <v-col cols="12" md="10" class="mx-auto">
-        <v-card class="overflow-hidden" text>
+        <v-card class="overflow-hidden" color="primary" dark>
           <v-toolbar flat text class="transparent">
             <v-toolbar-title class="font-weight-light">
               Enter the Consignment No.
@@ -19,7 +19,7 @@
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn color="success" @click="save">
-              Track Result
+              Track result
             </v-btn>
           </v-card-actions>
           <v-snackbar v-model="hasSaved" :timeout="2000" absolute bottom left>
