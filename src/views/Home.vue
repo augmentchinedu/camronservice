@@ -81,7 +81,7 @@
         <v-col cols="12" align="center">
           <v-card elevation="0" tile>
             <v-row>
-              <v-col cols="4">
+              <v-col cols="12" md="4">
                 <h2 class="red--text lighten-1">CESSNA 208 CARAVAN</h2>
                 <ul style="list-style: none">
                   <li>9 Passenger Commuter Configuration</li>
@@ -94,7 +94,7 @@
                   <li>202 MPH on Wheels</li>
                   <li>173 MPH on Floats</li>
                 </ul> </v-col
-              ><v-col cols="4">
+              ><v-col cols="12" md="4">
                 <h2 class="red--text lighten-1">PILATUS PC-12NG</h2>
 
                 <ul style="list-style: none">
@@ -108,7 +108,7 @@
                   <li>Online Flight Tracking</li>
                   <li>300 MPH Cruising Speed</li>
                 </ul> </v-col
-              ><v-col cols="4">
+              ><v-col cols="12" md="4">
                 <h2 class="red--text lighten-1">CESSNA 206</h2>
                 <ul style="list-style: none">
                   <li>4/5 Passenger</li>

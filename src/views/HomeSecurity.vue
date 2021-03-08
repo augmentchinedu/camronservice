@@ -1,85 +1,85 @@
 <template>
   <div>
-<div class="ma-6">
-    <v-row>
-      <v-col cols="12" md=""
-        ><h1 class="text-uppercase ml-6">on the move ?</h1></v-col
-      >
-    </v-row>
-    <v-row>
-      <v-col cols="12">
-        <v-img
-          src="https://camronservice.world/n58cc9djl3c5/1WMB9YdBzasBU0Ce4csoQP/802e0bbb559e900c8735dd21dd367457/moves-program-Banners.jpg"
+    <div class="ma-6">
+      <v-row>
+        <v-col cols="12" md=""
+          ><h1 class="text-uppercase text-h2  font-weight-black ml-6">on the move ?</h1></v-col
         >
-          <v-row class="fill-height ma-0" align="center" justify="start">
-            <v-col cols="12" md="7" class="ml-3 mt-2">
-              <h1 class="my-1 text-h3 font-weight-black text-center">
-                DON’T FORGET TO TAKE US WITH YOU
-              </h1>
-              <p class="my-3 text-center">
-                Let us handle the security for your new home. We’ll upgrade your
-                system and keep providing the professional monitoring that you
-                trust.
-              </p>
-              <div class="text-center mx-auto">
-                <v-btn class="my-1 mx-auto" elevation="1"
-                  >request a quote now</v-btn
-                >
-              </div>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <v-img
+            src="https://camronservice.world/n58cc9djl3c5/1WMB9YdBzasBU0Ce4csoQP/802e0bbb559e900c8735dd21dd367457/moves-program-Banners.jpg"
+          >
+            <v-row class="fill-height ma-0" align="center" justify="start">
+              <v-col cols="12" md="7" class="ml-3 mt-2">
+                <h1 class="my-1 text-h3 font-weight-black text-center">
+                  DON’T FORGET TO TAKE US WITH YOU
+                </h1>
+                <p class="my-3 text-center">
+                  Let us handle the security for your new home. We’ll upgrade
+                  your system and keep providing the professional monitoring
+                  that you trust.
+                </p>
+                <div class="text-center mx-auto">
+                  <v-btn class="my-1 mx-auto" elevation="1"
+                    >request a quote now</v-btn
+                  >
+                </div>
+              </v-col>
+            </v-row>
+          </v-img>
+          <v-img
+            src="https://camronservice.world/n58cc9djl3c5/4FSrwd8xMAVvUj1oR6e2rN/fa1438b35b61fa946b8bac58b6969aac/lifestyle-couple-lounging-in-living-room-2880.jpg"
+          >
+            <v-row class="fill-height ma-0" align="center" justify="end">
+              <v-col cols="12" md="6">
+                <h1 class="text-h3 font-weight-black text-center">
+                  RISK-FREE FOR 30 DAYS
+                </h1>
+                <p class="text-center mt-3">
+                  You’ll get a system that’s a perfect fit for your needs. But
+                  if you are not totally satisfied in the first 30 days, you can
+                  cancel your service with no termination fee – no questions
+                  asked.
+                </p>
+              </v-col>
+            </v-row>
+          </v-img></v-col
+        >
+        <v-col cols="12" class="my-2">
+          <h1 class="my-8 text-center">Browse our suite of solutions</h1>
+
+          <v-row>
+            <v-col cols="12" md="4" v-for="(i, n) in browse" :key="n">
+              <v-card class="" height="490">
+                <v-img height="250" :src="i.image"></v-img>
+
+                <h3 class="text-center my-3">{{ i.title }}</h3>
+
+                <v-card-text class="pa-6">
+                  <div class="text-center">{{ i.text }}</div>
+                </v-card-text>
+              </v-card>
             </v-col>
           </v-row>
-        </v-img>
-        <v-img
-          src="https://camronservice.world/n58cc9djl3c5/4FSrwd8xMAVvUj1oR6e2rN/fa1438b35b61fa946b8bac58b6969aac/lifestyle-couple-lounging-in-living-room-2880.jpg"
-        >
-          <v-row class="fill-height ma-0" align="center" justify="end">
-            <v-col cols="12" md="6">
-              <h1 class="text-h3 font-weight-black text-center">
-                RISK-FREE FOR 30 DAYS
-              </h1>
-              <p class="text-center mt-3">
-                You’ll get a system that’s a perfect fit for your needs. But if
-                you are not totally satisfied in the first 30 days, you can
-                cancel your service with no termination fee – no questions
-                asked.
-              </p>
-            </v-col>
-          </v-row>
-        </v-img></v-col
-      >
-      <v-col cols="12" class="my-2">
-        <h1 class="my-8 text-center">Browse our suite of solutions</h1>
-
-        <v-row>
-          <v-col cols="12" md="4" v-for="(i, n) in browse" :key="n">
-            <v-card class="" height="490">
-              <v-img height="250" :src="i.image"></v-img>
-
-              <h3 class="text-center my-3">{{ i.title }}</h3>
-
-              <v-card-text class="pa-6">
-                <div class="text-center">{{ i.text }}</div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="3" class="mx-auto">
-        <router-link to="/request-a-quote"               style="text-decoration: none; color: inherit;"
-          ><v-btn color="success">REQUEST A QUOTE NOW</v-btn></router-link
-        >
-      </v-col>
-    </v-row>
-    
-  </div>
+        </v-col>
+      </v-row>
+      <v-row class="px-auto">
+        <v-col cols="12" class="text-center">
+          <router-link
+            to="/request-a-quote"
+            style="text-decoration: none; color: inherit;"
+            ><v-btn color="success">REQUEST A QUOTE NOW</v-btn></router-link
+          >
+        </v-col>
+      </v-row>
+    </div>
     <Contact />
   </div>
-  
 </template>
 <script>
-import Contact from "../components/Contact.vue"
+import Contact from "../components/Contact.vue";
 export default {
   data() {
     return {

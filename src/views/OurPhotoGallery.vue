@@ -33,7 +33,8 @@
           v-for="(n, i) in interior"
           :key="i"
           class="d-flex child-flex"
-          cols="4"
+          cols="12"
+          md="4"
         >
           <v-img :src="n" :lazy-src="n" aspect-ratio="1" class="grey lighten-2">
             <template v-slot:placeholder>
@@ -48,7 +49,7 @@
         </v-col>
       </v-row>
     </v-container>
-      <Contact />
+    <Contact />
   </div>
 </template>
 
@@ -110,3 +111,6 @@ export default {
   },
 };
 </script>
+
+
+

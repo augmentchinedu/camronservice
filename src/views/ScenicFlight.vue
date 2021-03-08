@@ -1,7 +1,11 @@
 <template>
   <div>
     <v-row>
-      <v-img src="https://camronservice.world/scenic-flights/1.jpg" height="500"> </v-img>
+      <v-img
+        src="https://camronservice.world/scenic-flights/1.jpg"
+        height="400"
+      >
+      </v-img>
     </v-row>
     <v-container class="px-4">
       <v-row>
@@ -24,7 +28,11 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" md="6" style="border-style:solid; border-color:#b5b5b5; border-width: 0px 1px 0px 0px;">
+        <v-col
+          cols="12"
+          md="6"
+          class="borders"
+        >
           <h1>1-HOUR NIAGARA/TORONTO TOUR</h1>
           <p>
             Take off from Billy Bishop Toronto City Airport with views of
@@ -59,7 +67,7 @@
             </li>
           </ul>
         </v-col>
-       
+
         <v-col cols="12" md="6"
           ><h1>
             You will then circle Niagara Falls and return via Niagara River and
@@ -100,7 +108,11 @@
     <v-divider></v-divider>
     <v-container class="px-4 mb-3">
       <v-row>
-        <v-col cols="12" md="6"  style="border-style:solid; border-color:#b5b5b5; border-width: 0px 1px 0px 0px;">
+        <v-col
+          cols="12"
+          md="6"
+          class="borders"
+        >
           <p>Next you will embark on your Downtown Toronto scenic tour.</p>
           <p>Attractions include:</p>
           <ul>
@@ -124,7 +136,7 @@
             </li>
           </ul>
         </v-col>
-        
+
         <v-col cols="12" md="6"
           ><h1>
             20-MINUTE TORONTO TOUR
@@ -167,7 +179,7 @@
         </v-col>
       </v-row>
     </v-container>
-      <Contact />
+    <Contact />
   </div>
 </template>
 
@@ -179,3 +191,13 @@ export default {
   },
 };
 </script>
+
+<style>
+@media screen and (min-width: 600px) {
+  .borders {
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 0px 1px 0px 0px;
+  }
+}
+</style>
