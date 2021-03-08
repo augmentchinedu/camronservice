@@ -6,17 +6,23 @@
     </v-row>
     <v-row>
       <v-col cols="10" class="mx-auto">
-        <h1>Executive Air Charter Services</h1>
-        <p>
-          At Cameron Air, we are prepared to provide you with executive air
-          charter service for any occasion. From local trips to long range
-          charters, we will get you and your passengers where you need to go
-          without delay. Whether your private charter is for a small group of
-          executives or a large number of associates, we have the flexibility to
-          accommodate passenger lists of all sizes.
-        </p>
+        <div class="text-center">
+          <h1>Executive Air Charter Services</h1>
+          <p>
+            At Cameron Air, we are prepared to provide you with executive air
+            charter service for any occasion. From local trips to long range
+            charters, we will get you and your passengers where you need to go
+            without delay. Whether your private charter is for a small group of
+            executives or a large number of associates, we have the flexibility
+            to accommodate passenger lists of all sizes.
+          </p>
+          <p>
+            Our executive air charter flights offer you a number of luxurious
+            benefits, including:
+          </p>
+        </div>
         <ul>
-          <li>
+          <li class="my-2">
             <div>
               Convenience.
               <span
@@ -25,7 +31,7 @@
               >
             </div>
           </li>
-          <li>
+          <li class="my-2">
             <div>
               Security.
               <span>
@@ -35,7 +41,7 @@
             </div>
           </li>
 
-          <li>
+          <li class="my-2">
             <div>
               Comfort.
               <span
@@ -44,7 +50,7 @@
               >
             </div>
           </li>
-          <li>
+          <li class="my-2">
             <div>
               Efficiency.
               <span
@@ -53,7 +59,7 @@
               >
             </div>
           </li>
-          <li>
+          <li class="my-2">
             <div>
               Flexibility.
               <span
@@ -63,16 +69,19 @@
               >
             </div>
           </li>
-        <li>
+          <li class="my-2">
             <div>
-            Cost.
-            <span
-              >Aircraft charter can be more cost effective than flying with an
-              airline.</span
-            >
-          </div>
-        </li>
+              Cost.
+              <span
+                >Aircraft charter can be more cost effective than flying with an
+                airline.</span
+              >
+            </div>
+          </li>
         </ul>
+        <h4>
+          <p><router-link to="/request-a-quote" >Request a quote today</router-link> for travel to any destination.</p>
+        </h4>
       </v-col>
     </v-row>
     <Contact />

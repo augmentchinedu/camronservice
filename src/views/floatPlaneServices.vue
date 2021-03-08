@@ -1,10 +1,10 @@
 <template>
   <div>
     <v-row>
-      <v-img src="https://camronservice.world/float-plane-services/1.jpg">
+      <v-img src="https://camronservice.world/float-plane-services/1.jpg" height="200" width="200">
       </v-img>
     </v-row>
-    <v-row>
+    <v-row class="text-center">
       <v-col cols="10" class="mx-auto">
         <h1>Float Plane Services in Toronto, Muskoka Region and More</h1>
         <p>

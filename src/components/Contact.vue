@@ -1,5 +1,5 @@
 <template>
-  <v-container class="my-16" id="contact">
+  <v-container class="my-10" id="contact">
     <v-row>
       <v-col cols="12" md="6">
         <p>
