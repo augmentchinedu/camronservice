@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-row>
-      <v-img src="https://camronservice.world/scenic-flights/1.jpg"> </v-img>
+      <v-img src="https://camronservice.world/scenic-flights/1.jpg" height="500"> </v-img>
     </v-row>
     <v-container class="px-4">
       <v-row>
-        <v-col cols="10">
+        <v-col cols="12" class="mt-6">
           <h1>
             Take a 1-hour Toronto/Niagara Scenic or a 20-minute Toronto Scenic
           </h1>
@@ -24,7 +24,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="5">
+        <v-col cols="12" md="6" style="border-style:solid; border-color:#b5b5b5; border-width: 0px 1px 0px 0px;">
           <h1>1-HOUR NIAGARA/TORONTO TOUR</h1>
           <p>
             Take off from Billy Bishop Toronto City Airport with views of
@@ -59,8 +59,8 @@
             </li>
           </ul>
         </v-col>
-        <v-divider vertical class="mx-6"></v-divider>
-        <v-col cols="5"
+       
+        <v-col cols="12" md="6"
           ><h1>
             You will then circle Niagara Falls and return via Niagara River and
             Niagara Gorge.
@@ -96,9 +96,11 @@
           </ul></v-col
         >
       </v-row>
-      <v-divider class="mt-3"></v-divider>
+    </v-container>
+    <v-divider></v-divider>
+    <v-container class="px-4 mb-3">
       <v-row>
-        <v-col cols="5">
+        <v-col cols="12" md="6"  style="border-style:solid; border-color:#b5b5b5; border-width: 0px 1px 0px 0px;">
           <p>Next you will embark on your Downtown Toronto scenic tour.</p>
           <p>Attractions include:</p>
           <ul>
@@ -122,8 +124,8 @@
             </li>
           </ul>
         </v-col>
-        <v-divider vertical class="mx-6"></v-divider>
-        <v-col cols="5"
+        
+        <v-col cols="12" md="6"
           ><h1>
             20-MINUTE TORONTO TOUR
           </h1>
@@ -158,11 +160,14 @@
               Queen’s Park
             </li>
           </ul>
-          <p>You will then land at Billy Bishop Toronto City Airport with shoreline and waterfront views.</p>
+          <p>
+            You will then land at Billy Bishop Toronto City Airport with
+            shoreline and waterfront views.
+          </p>
         </v-col>
       </v-row>
-      <Contact />
     </v-container>
+      <Contact />
   </div>
 </template>
 

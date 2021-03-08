@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container grid-list-xs class="my-2">
+    <v-container grid-list-xs class="my-6">
       <v-row>
         <v-col
           v-for="n in images"

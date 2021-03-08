@@ -59,7 +59,7 @@
         required
         outlined
       ></v-text-field>
-      <v-textarea row="4" label="Comments" required outlined></v-textarea>
+      <v-textarea row="4" class="mb-n4" label="Comments" required outlined></v-textarea>
       <h6>Please Specify Extra Luggage</h6>
 
       <v-btn

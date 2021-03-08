@@ -1,6 +1,6 @@
 <template>
   <div class="my-6">
-    <h1 class="text-uppercase font-weight-black text-center">Track</h1>
+    <h1 class="text-uppercase font-weight-black text-center my-3">Track</h1>
     <v-row>
       <v-col cols="12" md="10" class="mx-auto">
         <v-card class="overflow-hidden" color="primary" dark>
