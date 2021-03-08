@@ -16,7 +16,12 @@
       </div>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-none d-md-flex">
-        <router-link :to="i.link" v-for="i in linksAndRoutes" :key="i">
+        <router-link
+          :to="i.link"
+          v-for="(i, n) in linksAndRoutes"
+          :key="n"
+          style="text-decoration: none; color: inherit;"
+        >
           <v-btn small text tile>
             <span class="mr-2">{{ i.text }}</span>
           </v-btn></router-link
@@ -30,7 +35,12 @@
             </v-btn>
           </template>
           <v-list class="d-xl-none d-md-none">
-            <router-link v-for="i in linksAndRoutes" :key="i" :to="i.link"  style="text-decoration: none; color: inherit;">
+            <router-link
+              v-for="(i, n) in linksAndRoutes"
+              :key="n"
+              :to="i.link"
+              style="text-decoration: none; color: inherit;"
+            >
               <v-list-item>
                 <v-btn elevation="0" text>
                   <v-list-item-title class="text-button font-weight-bold">{{
