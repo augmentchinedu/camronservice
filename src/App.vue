@@ -23,7 +23,7 @@
           style="text-decoration: none; color: inherit;"
         >
           <v-btn small text tile>
-            <span class="mr-2">{{ i.text }}</span>
+            <span>{{ i.text }}</span>
           </v-btn></router-link
         >
 
@@ -37,7 +37,9 @@
           <v-list>
             <v-list-item>
               <v-btn elevation="0" text>
-                <v-list-item-title class="text-button font-weight-bold">English</v-list-item-title>
+                <v-list-item-title class="text-button font-weight-bold"
+                  >English</v-list-item-title
+                >
               </v-btn>
             </v-list-item>
           </v-list>
@@ -93,11 +95,7 @@ export default {
       { link: "/scenic-flights", text: "scenic flights" },
       { link: "/track", text: "track" },
     ],
-    languaes:[
-      
-      "English", "japanese"
-
-    ]
+    languaes: ["English", "japanese"],
   }),
   methods: {
     toLowerCase(input) {
@@ -109,17 +107,19 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.data.companyName,
+      title: "camronservice.com",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { name: "robots", content: "index, follow" },
+
         {
           name: "description",
-          content: `${this.data.meta.description}`,
+          content: `At Cameron Air, our top priorities are your safety and comfort during your time with us. Our fleet of aircraft are designed to provide fast, comfortable and safe travel options to our passengers. Our all-weather aircraft are fully equipped to go where you want, when you want.
+
+`,
         },
       ],
-      link: [{ rel: "icon", href: this.data.favicon.imgUrl }],
     };
   },
 };
