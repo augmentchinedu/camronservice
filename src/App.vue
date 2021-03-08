@@ -6,12 +6,12 @@
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://vuejs.org/images/logo.png"
+          src="./assets/logo/camronservice.png"
           transition="scale-transition"
           width="200"
           height="100"
           max-height="100"
-          max-width="50"
+          max-width="200"
         />
       </div>
       <v-spacer></v-spacer>
@@ -26,6 +26,22 @@
             <span class="mr-2">{{ i.text }}</span>
           </v-btn></router-link
         >
+
+        <v-menu offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn text small v-bind="attrs" v-on="on"
+              ><v-icon> mdi-translate</v-icon>
+              <v-icon small>mdi-chevron-down</v-icon></v-btn
+            >
+          </template>
+          <v-list>
+            <v-list-item>
+              <v-btn elevation="0" text>
+                <v-list-item-title class="text-button font-weight-bold">English</v-list-item-title>
+              </v-btn>
+            </v-list-item>
+          </v-list>
+        </v-menu>
       </div>
       <div class="d-xl-none d-md-none">
         <v-menu offset-y>
@@ -77,6 +93,11 @@ export default {
       { link: "/scenic-flights", text: "scenic flights" },
       { link: "/track", text: "track" },
     ],
+    languaes:[
+      
+      "English", "japanese"
+
+    ]
   }),
   methods: {
     toLowerCase(input) {
