@@ -80,45 +80,47 @@
       <v-row>
         <v-col cols="12" align="center">
           <v-card elevation="0" tile>
-            <div class="mb-3">
-              <h2 class="red--text lighten-1">CESSNA 208 CARAVAN</h2>
-              <ul style="list-style: none">
-                <li>9 Passenger Commuter Configuration</li>
-                <li>6 Passenger Executive Configuration&nbsp;</li>
-                <li>Turbine Powerplant</li>
-                <li>Air Conditioning</li>
-                <li>Collision Avoidance System</li>
-                <li>State-of-the-Art Navigation System</li>
-                <li>Autopilot</li>
-                <li>202 MPH on Wheels</li>
-                <li>173 MPH on Floats</li>
-              </ul>
-            </div>
-            <div class="mb-3">
-              <h2 class="red--text lighten-1">PILATUS PC-12NG</h2>
+            <v-row>
+              <v-col cols="4">
+                <h2 class="red--text lighten-1">CESSNA 208 CARAVAN</h2>
+                <ul style="list-style: none">
+                  <li>9 Passenger Commuter Configuration</li>
+                  <li>6 Passenger Executive Configuration&nbsp;</li>
+                  <li>Turbine Powerplant</li>
+                  <li>Air Conditioning</li>
+                  <li>Collision Avoidance System</li>
+                  <li>State-of-the-Art Navigation System</li>
+                  <li>Autopilot</li>
+                  <li>202 MPH on Wheels</li>
+                  <li>173 MPH on Floats</li>
+                </ul> </v-col
+              ><v-col cols="4">
+                <h2 class="red--text lighten-1">PILATUS PC-12NG</h2>
 
-              <ul style="list-style: none">
-                <li>6 Passenger Executive Configuration</li>
-                <li>Turbine Powerplant</li>
-                <li>Pressurized Cabin for High Altitude Comfort</li>
-                <li>Air Conditioning</li>
-                <li>Collission Avoidance System</li>
-                <li>State-of-the-Art Navigation System</li>
-                <li>Autopilot</li>
-                <li>Online Flight Tracking</li>
-                <li>300 MPH Cruising Speed</li>
-              </ul>
-            </div>
-            <div class="mb-3">
-              <h2 class="red--text lighten-1">CESSNA 206</h2>
-              <ul style="list-style: none">
-                <li>4/5 Passenger</li>
-                <li>State-of-the-Art Navigation System</li>
-                <li>Passenger Intercom System</li>
-                <li>160 MPH on Wheels</li>
-                <li>140 MPH on Floats</li>
-              </ul>
-            </div>
+                <ul style="list-style: none">
+                  <li>6 Passenger Executive Configuration</li>
+                  <li>Turbine Powerplant</li>
+                  <li>Pressurized Cabin for High Altitude Comfort</li>
+                  <li>Air Conditioning</li>
+                  <li>Collission Avoidance System</li>
+                  <li>State-of-the-Art Navigation System</li>
+                  <li>Autopilot</li>
+                  <li>Online Flight Tracking</li>
+                  <li>300 MPH Cruising Speed</li>
+                </ul> </v-col
+              ><v-col cols="4">
+                <h2 class="red--text lighten-1">CESSNA 206</h2>
+                <ul style="list-style: none">
+                  <li>4/5 Passenger</li>
+                  <li>State-of-the-Art Navigation System</li>
+                  <li>Passenger Intercom System</li>
+                  <li>160 MPH on Wheels</li>
+                  <li>140 MPH on Floats</li>
+                </ul>
+              </v-col>
+            </v-row>
+
+            
           </v-card>
         </v-col>
       </v-row>

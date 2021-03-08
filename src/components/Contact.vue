@@ -1,6 +1,6 @@
 <template>
-  <v-container class="my-10" id="contact">
-    <v-row>
+  <div class="grey lighten-1">
+    <v-row class="pa-3">
       <v-col cols="12" md="6">
         <p>
           Cameron Air has access to a variety of other aircraft to suit your
@@ -33,5 +33,5 @@
         </address>
       </v-col>
     </v-row>
-  </v-container>
+  </div>
 </template>

@@ -1,63 +1,67 @@
 <template>
-  <v-container grid-list-xs>
-    <v-row>
-      <v-col
-        v-for="n in images"
-        :key="n"
-        class="d-flex child-flex mx-auto"
-        cols="4"
-      >
-        <v-img
-          :src="n"
-          :lazy-src="n"
-          width="150"
-          height="150"
-          class="grey lighten-2"
+  <div>
+    <v-container grid-list-xs class="my-2">
+      <v-row>
+        <v-col
+          v-for="n in images"
+          :key="n"
+          class="d-flex child-flex mx-auto"
+          cols="12"
+          md="4"
         >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col cols="12">
-        <h1>
-          OUR EXECUTIVE INTERIORS
-        </h1>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col v-for="n in 3" :key="n" class="d-flex child-flex" cols="4">
-        <v-img
-          :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-          :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-          aspect-ratio="1"
-          class="grey lighten-2"
+          <v-img :src="n" :lazy-src="n" height="250" class="grey lighten-2">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12">
+          <h1 class="text-center">
+            OUR EXECUTIVE INTERIORS
+          </h1>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col
+          v-for="(n, i) in interior"
+          :key="i"
+          class="d-flex child-flex"
+          cols="4"
         >
-          <template v-slot:placeholder>
-            <v-row class="fill-height ma-0" align="center" justify="center">
-              <v-progress-circular
-                indeterminate
-                color="grey lighten-5"
-              ></v-progress-circular>
-            </v-row>
-          </template>
-        </v-img>
-      </v-col>
-    </v-row>
-  </v-container>
+          <v-img :src="n" :lazy-src="n" aspect-ratio="1" class="grey lighten-2">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular
+                  indeterminate
+                  color="grey lighten-5"
+                ></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+      <Contact />
+  </div>
 </template>
 
 <script>
+import Contact from "../components/Contact.vue";
 export default {
   data() {
     return {
+      interior: [
+        "https://camronservice.world/our-photo-gallery/images/exec2.jpg",
+        "https://camronservice.world/our-photo-gallery/images/exec3.jpg",
+        "https://camronservice.world/our-photo-gallery/images/exec4.jpg",
+      ],
       images: [
         "https://camronservice.world/our-photo-gallery/images/1.jpg",
         "https://camronservice.world/our-photo-gallery/images/2.jpg",
@@ -100,6 +104,9 @@ export default {
         "https://camronservice.world/our-photo-gallery/images/39.jpg",
       ],
     };
+  },
+  components: {
+    Contact,
   },
 };
 </script>
