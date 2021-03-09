@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-img
-        src="https://camronservice.world/scenic-flights/1.jpg"
+        src="../assets/images/SCENIC/1.jpg"
         height="400"
       >
       </v-img>

@@ -3,14 +3,14 @@
     <div class="ma-6">
       <v-row>
         <v-col cols="12" md=""
-          ><h1 class="text-uppercase text-h2  font-weight-black ml-6">on the move ?</h1></v-col
+          ><h1 class="text-uppercase text-h2  font-weight-black ml-6">
+            on the move ?
+          </h1></v-col
         >
       </v-row>
       <v-row>
         <v-col cols="12">
-          <v-img
-            src="../assets/images/moves-program-Banners.jpg"
-          >
+          <v-img src="../assets/images/moves-program-Banners.jpg">
             <v-row class="fill-height ma-0" align="center" justify="start">
               <v-col cols="12" md="7" class="ml-3 mt-2">
                 <h1 class="my-1 text-h3 font-weight-black text-center">
@@ -85,71 +85,61 @@ export default {
     return {
       browse: [
         {
-          image:
-            "../assets/images/homesecurity/1.jpg",
+          image: "../assets/images/homesecurity/1.jpg",
           title: "Private Client Storage",
           text:
             "Our vaulting facilities are built to provide you with state‑of‑the‑art precious metals storage services, including primary dedicated pick‑and‑pack and storage operations around the world.",
         },
         {
-          image:
-            "../assets/images/homesecurity/2.png",
+          image: "../assets/images/homesecurity/2.png",
           title: "Secure Logistics",
           text:
             "Let camronservice be your sole provider of secure logistics, managing the pick‑up, transit and delivery of your valuables.",
         },
         {
-          image:
-            "../assets/images/homesecurity/3.png",
+          image: "../assets/images/homesecurity/3.png",
           title: "Trade Show Services",
           text:
             "Our trade show services manage every level of the supply chain for diamonds, jewelry.",
         },
         {
-          image:
-            "../assets/images/homesecurity/4.jpg",
+          image: "../assets/images/homesecurity/4.jpg",
           title: "Secure Long Haul Transportation",
           text:
             "High‑value transportation of valuable assets across countries and borders.",
         },
         {
-          image:
-            "../assets/images/homesecurity/5.png",
+          image: "../assets/images/homesecurity/5.png",
           title: "Distribution Solutions",
           text:
             "Secure and efficient, our distribution solutions are designed to support your supply chain strategy.",
         },
         {
-          image:
-            "../assets/images/homesecurity/6.png",
+          image: "../assets/images/homesecurity/6.png",
           title: "CEIV Pharma‑Certified Transport",
           text:
             "End‑to‑end temperature control and security for life science products, via air, sea, and road.",
         },
         {
-          image:
-            "../assets/images/homesecurity/7.png",
+          image: "../assets/images/homesecurity/7.png",
           title: "Customs Clearance",
           text:
             "Let our global network of customs experts help to reduce delays in your shipments.",
         },
         {
-          image:
-            "../assets/images/homesecurity/8.png",
+          image: "../assets/images/homesecurity/8.png",
           title: "Secure Vaults and Bonded Warehouses",
           text:
             "Our high‑security warehousing protects your products around the clock.",
         },
         {
-          image:
-            "../assets/images/homesecurity/10.png",
+          image: "../assets/images/homesecurity/10.png",
           title: "Inventory Management",
           text:
             "With Camron’s inventory management, you stay informed with complete visibility and control.",
         },
         {
-          image:
-            "../assets/images/homesecurity/11.jpg",
+          image: "../assets/images/homesecurity/11.jpg",
           title: "Cash Processing",
           text:
             "Camron’s is the trusted partner to central banks, wholesale, and retail banks for global multi-currency processing.",
