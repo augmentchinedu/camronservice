@@ -6,23 +6,8 @@
       hide-delimiter-background
       delimiter-icon="mdi-minus"
     >
-      <v-carousel-item v-for="(item, i) in sliderImages" :key="i" :src="item">
-        <!-- <v-row class="fill-height ml-10 mt-16" align="center">
-          <div>
-            <div
-              class="text-h5 text-sm-h4 text-md-h3 text-xl-h2 black--text font-weight-black"
-            >
-              {{ item.title }}
-            </div>
-            <br />
-            <div
-              class="black--text font-weight-medium text-h6 text-sm-h5 text-md-h4 text-xl-h3"
-            >
-              {{ item.caption }}
-            </div>
-          </div>
-        </v-row> -->
-      </v-carousel-item>
+      <v-carousel-item v-for="(item, i) in sliderImages" :key="i" :src="`../assets/images/slider/${i+1}.jpg`">
+       </v-carousel-item>
     </v-carousel>
     <div class="container my-16" id="about">
       <v-row>
