@@ -1,5 +1,5 @@
 <template>
-  <div class="grey lighten-1">
+  <div class="grey darken-2">
     <v-row class="pa-3">
       <v-col cols="12" md="6">
         <p>
