@@ -48,14 +48,9 @@
             <v-carousel-item
               v-for="(slide, i) in aboutImages"
               :key="i"
-              :src="slide"
+              :src="`../assets/images/about/${i+4}.jpg`"
             >
-              <!-- <v-row class="fill-height mt-16 ml-16" align="center">
-                <div>
-                  <div class="text-h5">{{ slide.title }}</div>
-                  <div class="text-subtitle-1">{{ slide.caption }}</div>
-                </div>
-              </v-row> -->
+              
             </v-carousel-item>
           </v-carousel>
         </v-col>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-img src="https://camronservice.world/executive-air-charter/1.jpg" height="400">
+      <v-img src="../assets/images/slider/1.jpg" height="400">
       </v-img>
     </v-row>
     <v-row>

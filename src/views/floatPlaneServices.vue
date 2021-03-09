@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row>
-      <v-img src="https://camronservice.world/float-plane-services/1.jpg" height="400">
+      <v-img src="../assets/images/about/5.jpg" height="400">
       </v-img>
     </v-row>
     <v-row class="text-center">
