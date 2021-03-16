@@ -14,6 +14,8 @@
           max-width="200"
         />
       </div>
+
+      <div style="display: none;" id="google_translate_element"></div>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-none d-md-flex">
         <router-link
@@ -22,10 +24,8 @@
           :key="n"
           style="text-decoration: none; color: inherit;"
         >
-          <v-btn small text tile>
-            <span>{{ i.text }}</span>
-          </v-btn></router-link
-        >
+          <span class="text-caption text-uppercase px-2">{{ i.text }}</span>
+        </router-link>
 
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
@@ -36,16 +36,106 @@
           </template>
           <v-list>
             <v-list-item>
-              <v-btn elevation="0" text>
-                <v-list-item-title class="text-button font-weight-bold"
-                  >English</v-list-item-title
-                >
-              </v-btn>
+              <a style="display:none" id="current" href="#">English</a>
+              <ul>
+                
+                  <li>
+                    <a id="English" onclick="checklang('English')"
+                      >English
+                    </a>
+                  </li>
+                
+
+                <li>
+                  
+                    <a
+                      href="javascript:;"
+                      id="Chinese"
+                      onclick="checklang('Chinese')"
+                      >Chinese
+                    </a>
+                  
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="German"
+                    onclick="checklang('German')"
+                    >German
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" id="Dutch" onclick="checklang('Dutch')"
+                    >Dutch
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Italian"
+                    onclick="checklang('Italian')"
+                    >Italian
+                  </a>
+                </li>
+              </ul>
             </v-list-item>
           </v-list>
         </v-menu>
       </div>
-      <div class="d-xl-none d-md-none">
+      <div class="d-xl-none d-md-none"><v-menu offset-y>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn text small v-bind="attrs" v-on="on"
+              ><v-icon> mdi-translate</v-icon>
+              <v-icon small>mdi-chevron-down</v-icon></v-btn
+            >
+          </template>
+          <v-list>
+            <v-list-item>
+              <a style="display:none" id="current" href="#">English</a>
+              <ul>
+                
+                  <li>
+                    <a id="English" onclick="checklang('English')"
+                      >English
+                    </a>
+                  </li>
+                
+
+                <li>
+                  
+                    <a
+                      href="javascript:;"
+                      id="Chinese"
+                      onclick="checklang('Chinese')"
+                      >Chinese
+                    </a>
+                  
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="German"
+                    onclick="checklang('German')"
+                    >German
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:;" id="Dutch" onclick="checklang('Dutch')"
+                    >Dutch
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Italian"
+                    onclick="checklang('Italian')"
+                    >Italian
+                  </a>
+                </li>
+              </ul>
+            </v-list-item>
+          </v-list>
+        </v-menu>
         <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn fab v-bind="attrs" v-on="on" text>
@@ -72,7 +162,7 @@
       </div>
     </v-app-bar>
 
-    <v-main>
+    <v-main class="pa-0">
       <router-view></router-view>
     </v-main>
     <Footer />
@@ -115,9 +205,7 @@ export default {
 
         {
           name: "description",
-          content: `At Cameron Air, our top priorities are your safety and comfort during your time with us. Our fleet of aircraft are designed to provide fast, comfortable and safe travel options to our passengers. Our all-weather aircraft are fully equipped to go where you want, when you want.
-
-`,
+          content: `At Cameron Air, our top priorities are your safety and comfort during your time with us. Our fleet of aircraft are designed to provide fast, comfortable and safe travel options to our passengers. Our all-weather aircraft are fully equipped to go where you want, when you want.`,
         },
       ],
     };
@@ -125,6 +213,22 @@ export default {
 };
 </script>
 <style lang="scss">
+.v-application ul{
+padding-left: 0px;
+}
+.skiptranslate {
+  display: none;
+}
+.list {
+  list-style: none;
+}
+#goog-gt-tt {
+  display: none !important;
+}
+li {
+  list-style: none;
+}
+
 html,
 body,
 .v-application {

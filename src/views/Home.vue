@@ -6,8 +6,12 @@
       hide-delimiter-background
       delimiter-icon="mdi-minus"
     >
-      <v-carousel-item v-for="(item, i) in sliderImages" :key="i" :src="`../assets/images/slider/${i+1}.jpg`">
-       </v-carousel-item>
+      <v-carousel-item
+        v-for="(item, i) in sliderImages"
+        :key="i"
+        :src="`../assets/images/slider/${i + 1}.jpg`"
+      >
+      </v-carousel-item>
     </v-carousel>
     <div class="container my-16" id="about">
       <v-row>
@@ -19,6 +23,7 @@
           </h1>
 
           <div class="font-weight-medium">
+            
             <p>
               At Cameron Air, our top priorities are your safety and comfort
               during your time with us. Our fleet of aircraft are designed to
@@ -48,9 +53,8 @@
             <v-carousel-item
               v-for="(slide, i) in aboutImages"
               :key="i"
-              :src="`../assets/images/about/${i+4}.jpg`"
+              :src="`../assets/images/about/${i + 4}.jpg`"
             >
-              
             </v-carousel-item>
           </v-carousel>
         </v-col>
@@ -99,8 +103,6 @@
                 </ul>
               </v-col>
             </v-row>
-
-            
           </v-card>
         </v-col>
       </v-row>

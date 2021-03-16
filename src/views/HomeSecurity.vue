@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="ma-6">
-      <v-row>
+      <v-row class="my-6">
         <v-col cols="12" md=""
           ><h1 class="text-uppercase text-h2  font-weight-black ml-6">
             on the move ?
