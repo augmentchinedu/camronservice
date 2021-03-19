@@ -15,11 +15,11 @@
         <address>
           <span class="d-block mb-1">
             <strong class="text-uppercase text-subtitle-2">Phone</strong>:
-            +15759648450</span
+            <a href="tel:+15759648450">+15759648450</a></span
           >
           <span class="d-block mb-3">
             <strong class="text-uppercase text-subtitle-2">Email</strong>:
-            support@camronservice.world</span
+            <a href="support@camronservice.world">support@camronservice.world</a></span
           >
           <span class="d-block mb-3"> 
             <strong class="text-uppercase text-subtitle-2">Address</strong>:
