@@ -1,45 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="icon" href="/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"
-    />
-    <link href="/css/chunk-07709945.1fe66547.css" rel="prefetch" />
-    <link href="/css/chunk-083b388f.fbc0c175.css" rel="prefetch" />
-    <link href="/css/chunk-4e2ada71.32ac76b6.css" rel="prefetch" />
-    <link href="/css/chunk-a36e8540.533922b9.css" rel="prefetch" />
-    <link href="/js/chunk-00c6705c.792727ac.js" rel="prefetch" />
-    <link href="/js/chunk-07709945.304e699d.js" rel="prefetch" />
-    <link href="/js/chunk-083b388f.662dc923.js" rel="prefetch" />
-    <link href="/js/chunk-2d0d092a.729931b6.js" rel="prefetch" />
-    <link href="/js/chunk-2d213f25.8b171693.js" rel="prefetch" />
-    <link href="/js/chunk-2d2245c0.146895d8.js" rel="prefetch" />
-    <link href="/js/chunk-4e2ada71.fbf92852.js" rel="prefetch" />
-    <link href="/js/chunk-a36e8540.b6097e5b.js" rel="prefetch" />
-    <link href="/css/app.18d25a45.css" rel="preload" as="style" />
-    <link href="/css/chunk-vendors.1f915e89.css" rel="preload" as="style" />
-    <link href="/js/app.69ebdae4.js" rel="preload" as="script" />
-    <link href="/js/chunk-vendors.72c7ac0c.js" rel="preload" as="script" />
-    <link href="/css/chunk-vendors.1f915e89.css" rel="stylesheet" />
-    <link href="/css/app.18d25a45.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="app"></div>
-    <script src="/js/chunk-vendors.72c7ac0c.js"></script>
-    <script src="/js/app.69ebdae4.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.gstatic.com"><link rel="icon" href="/favicon.png"><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css"><link href="/css/chunk-3c4186c6.31b85913.css" rel="prefetch"><link href="/css/chunk-6f039124.1fe66547.css" rel="prefetch"><link href="/css/chunk-73462e8c.0d4e2e22.css" rel="prefetch"><link href="/css/chunk-a36e8540.533922b9.css" rel="prefetch"><link href="/js/chunk-021427c0.3af24eaf.js" rel="prefetch"><link href="/js/chunk-3a4dec18.9d18ec80.js" rel="prefetch"><link href="/js/chunk-3c4186c6.2186d4eb.js" rel="prefetch"><link href="/js/chunk-6f039124.e237b12a.js" rel="prefetch"><link href="/js/chunk-73462e8c.2f3bd514.js" rel="prefetch"><link href="/js/chunk-a237b8a8.666952ba.js" rel="prefetch"><link href="/js/chunk-a36e8540.cee9e18e.js" rel="prefetch"><link href="/js/chunk-f7f9ecd0.5cb1e977.js" rel="prefetch"><link href="/css/app.c2ddc1f0.css" rel="preload" as="style"><link href="/css/chunk-vendors.6c756947.css" rel="preload" as="style"><link href="/js/app.5d01e828.js" rel="preload" as="script"><link href="/js/chunk-vendors.5f5d8ec9.js" rel="preload" as="script"><link href="/css/chunk-vendors.6c756947.css" rel="stylesheet"><link href="/css/app.c2ddc1f0.css" rel="stylesheet"></head><body><div id="app"></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script><script>function checklang(x) {
+      var newlang = document.getElementById(x).innerHTML;
+      document.getElementById('current').innerHTML = newlang;
+      translateLanguage(x);
+    }</script><script>function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }</script><script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><script src="http://code.jquery.com/jquery-1.11.3.min.js"></script><script>function translateLanguage(lang) {
+
+      var $frame = $('.goog-te-menu-frame:first');
+      if (!$frame.size()) {
+        alert("Error: Could not find Google translate frame.");
+        return false;
+      }
+      $frame.contents().find('.goog-te-menu2-item span.text:contains(' + lang + ')').get(0).click();
+      return false;
+    }</script><script src="/js/chunk-vendors.5f5d8ec9.js"></script><script src="/js/app.5d01e828.js"></script></body></html>

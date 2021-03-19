@@ -23,7 +23,6 @@
           </h1>
 
           <div class="font-weight-medium">
-            
             <p>
               At Cameron Air, our top priorities are your safety and comfort
               during your time with us. Our fleet of aircraft are designed to
@@ -108,6 +107,23 @@
       </v-row>
     </div>
     <Contact />
+
+    <div class="text-center">
+      <v-dialog v-model="dialog" width="500">
+        <v-card>
+          <v-card-title class="headline lighten-2"> Success </v-card-title>
+
+          <v-card-text> Your quotation has been successfully sent </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="primary" text @click="dialog = false"> Close </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </div>
   </div>
 </template>
 
@@ -117,6 +133,7 @@ import Contact from "../components/Contact";
 export default {
   data() {
     return {
+      dialog: false,
       sliderImages: [
         "https://camronservice.world/images/1.jpg",
         "https://camronservice.world/images/2.jpg",
@@ -130,6 +147,13 @@ export default {
   },
   components: {
     Contact,
+  },
+  mounted() {
+    var params = new URLSearchParams(window.location.search);
+    console.log(params.get("sent"));
+    if (params.get("sent") == "true") {
+      this.dialog = true;
+    }
   },
 };
 </script>
