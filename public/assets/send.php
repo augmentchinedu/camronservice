@@ -53,6 +53,6 @@ $from = "from: noreply@camronservice.world";
 $to = "support@camronservice.world";
 
 if(mail($to, $subject, $body, $from)){
-    header("location: https://camronservice.world/?sent=true")
+    echo 'true';
 }
 ?>

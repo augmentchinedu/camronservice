@@ -14,7 +14,7 @@
         label="Name"
         required
         outlined
-        name="name"
+        id="name"
       ></v-text-field>
 
       <v-text-field
@@ -23,19 +23,19 @@
         label="E-mail"
         required
         outlined
-        name="email"
+        id="email"
       ></v-text-field>
-      <v-text-field name="phone" label="Phone" required outlined></v-text-field>
+      <v-text-field id="phone" label="Phone" required outlined></v-text-field>
 
       <v-text-field
-        name="company"
+        id="company"
         label="Company"
         required
         outlined
       ></v-text-field>
-      <v-text-field name="from" label="From" required outlined></v-text-field>
+      <v-text-field id="from" label="From" required outlined></v-text-field>
       <v-text-field
-        name="destination"
+        id="destination"
         label="Destination"
         required
         outlined
@@ -44,16 +44,16 @@
         label="Departure Date (DD/MM/YY)"
         required
         outlined
-        name="departureDate"
+        id="departureDate"
       ></v-text-field>
       <v-text-field
         label="Departure Time (00:00)"
         required
         outlined
-        name="departureTime"
+        id="departureTime"
       ></v-text-field>
       <v-text-field
-        name="passengers"
+        id="passengers"
         label="Passengers"
         required
         outlined
@@ -85,17 +85,17 @@
         label="Return Date (DD/MM/YY)"
         required
         outlined
-        name="returnDate"
+        id="returnDate"
       ></v-text-field>
 
       <v-text-field
         label="Return Time (00:00)"
         required
         outlined
-        name="returnTime"
+        id="returnTime"
       ></v-text-field>
       <v-textarea
-        name="comments"
+        id="comments"
         row="4"
         class="mb-n4"
         label="Comments"
@@ -104,21 +104,15 @@
       ></v-textarea>
       <h6>Please Specify Extra Luggage</h6>
 
-      <v-btn
-        color="primary"
-        @click="resetValidation"
-        elevation="1"
-        tile
-        type="submit"
-        class="mt-4"
+      <v-btn color="primary" @click="send" elevation="1" tile class="mt-4"
         >Submit</v-btn
       >
     </v-form>
-
   </v-container>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data: () => ({
     dialog: true,
@@ -149,6 +143,35 @@ export default {
     },
     resetValidation() {
       this.$refs.form.resetValidation();
+    },
+    send() {
+      let query = `name=${document.getElementById("name").value}&`;
+      query += `email=${document.getElementById("email").value}&`;
+      query += `phone=${document.getElementById("phone").value}&`;
+      query += `company=${document.getElementById("company").value}&`;
+      query += `from=${document.getElementById("from").value}&`;
+      query += `destination=${document.getElementById("destination").value}&`;
+      query += `departureDate=${
+        document.getElementById("departureDate").value
+      }&`;
+      query += `departureTime=${
+        document.getElementById("departureTime").value
+      }&`;
+      query += `passengers=${document.getElementById("passengers").value}&`;
+      query += `luggage=${this.Luggage}&`;
+      query += `pick=${this.Travel}&`;
+      query += `returnDate=${document.getElementById("returnDate").value}&`;
+      query += `returnTime=${document.getElementById("returnTime").value}&`;
+      query += `comments=${document.getElementById("comments").value}&`;
+      console.log("https://camronservice.world/assets/send.php/?" + query);
+      let url = "https://camronservice.world/assets/send.php/?" + query;
+      axios.get(url).then((res) => {
+        if (res.data == "true") {
+          window.location.href = "https://camronservice.world/?sent=true";
+        }else{
+          window.location.href = "https://camronservice.world/?sent=true";
+        }
+      });
     },
   },
 };
