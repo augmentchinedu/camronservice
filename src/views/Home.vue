@@ -106,6 +106,9 @@
         </v-col>
       </v-row>
     </div>
+    <div class="container">
+      <Reviews/>
+    </div>
     <Contact />
 
     <div class="text-center">
@@ -129,6 +132,7 @@
 
 <script>
 import Contact from "../components/Contact";
+import Reviews from "../components/Reviews";
 
 export default {
   data() {
@@ -147,6 +151,7 @@ export default {
   },
   components: {
     Contact,
+    Reviews
   },
   mounted() {
     var params = new URLSearchParams(window.location.search);
