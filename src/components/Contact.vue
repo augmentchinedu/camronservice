@@ -19,7 +19,7 @@
           >
           <span class="d-block mb-3">
             <strong class="text-uppercase text-subtitle-2">Email</strong>:
-            <a href="support@camronservice.world">support@camronservice.world</a></span
+            <a href="mailto:support@camronservice.world">support@camronservice.world</a></span
           >
           <span class="d-block mb-3"> 
             <strong class="text-uppercase text-subtitle-2">Address</strong>:

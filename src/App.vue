@@ -15,14 +15,14 @@
         />
       </div>
 
-      <div style="display: none;" id="google_translate_element"></div>
+      <div style="display: none" id="google_translate_element"></div>
       <v-spacer></v-spacer>
       <div class="d-none d-sm-none d-md-flex">
         <router-link
           :to="i.link"
           v-for="(i, n) in linksAndRoutes"
           :key="n"
-          style="text-decoration: none; color: inherit;"
+          style="text-decoration: none; color: inherit"
         >
           <span class="text-caption text-uppercase px-2">{{ i.text }}</span>
         </router-link>
@@ -36,25 +36,19 @@
           </template>
           <v-list>
             <v-list-item>
-              <a style="display:none" id="current" href="#">English</a>
+              <a style="display: none" id="current" href="#">English</a>
               <ul>
-                
-                  <li>
-                    <a id="English" onclick="checklang('English')"
-                      >English
-                    </a>
-                  </li>
-                
+                <li>
+                  <a id="English" onclick="checklang('English')">English </a>
+                </li>
 
                 <li>
-                  
-                    <a
-                      href="javascript:;"
-                      id="Chinese"
-                      onclick="checklang('Chinese')"
-                      >Chinese
-                    </a>
-                  
+                  <a
+                    href="javascript:;"
+                    id="Chinese"
+                    onclick="checklang('Chinese')"
+                    >Chinese
+                  </a>
                 </li>
                 <li>
                   <a
@@ -77,12 +71,37 @@
                     >Italian
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="French"
+                    onclick="checklang('French')"
+                    >French
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Russian"
+                    onclick="checklang('Russian')"
+                    >Russian
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Spanish"
+                    onclick="checklang('Spanish')"
+                    >Spanish
+                  </a>
+                </li>
               </ul>
             </v-list-item>
           </v-list>
         </v-menu>
       </div>
-      <div class="d-xl-none d-md-none"><v-menu offset-y>
+      <div class="d-xl-none d-md-none">
+        <v-menu offset-y>
           <template v-slot:activator="{ on, attrs }">
             <v-btn text small v-bind="attrs" v-on="on"
               ><v-icon> mdi-translate</v-icon>
@@ -91,25 +110,19 @@
           </template>
           <v-list>
             <v-list-item>
-              <a style="display:none" id="current" href="#">English</a>
+              <a style="display: none" id="current" href="#">English</a>
               <ul>
-                
-                  <li>
-                    <a id="English" onclick="checklang('English')"
-                      >English
-                    </a>
-                  </li>
-                
+                <li>
+                  <a id="English" onclick="checklang('English')">English </a>
+                </li>
 
                 <li>
-                  
-                    <a
-                      href="javascript:;"
-                      id="Chinese"
-                      onclick="checklang('Chinese')"
-                      >Chinese
-                    </a>
-                  
+                  <a
+                    href="javascript:;"
+                    id="Chinese"
+                    onclick="checklang('Chinese')"
+                    >Chinese
+                  </a>
                 </li>
                 <li>
                   <a
@@ -130,6 +143,30 @@
                     id="Italian"
                     onclick="checklang('Italian')"
                     >Italian
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="French"
+                    onclick="checklang('French')"
+                    >French
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Spanish"
+                    onclick="checklang('Spanish')"
+                    >Spanish
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    id="Russian"
+                    onclick="checklang('Russian')"
+                    >Russian
                   </a>
                 </li>
               </ul>
@@ -147,7 +184,7 @@
               v-for="(i, n) in linksAndRoutes"
               :key="n"
               :to="i.link"
-              style="text-decoration: none; color: inherit;"
+              style="text-decoration: none; color: inherit"
             >
               <v-list-item>
                 <v-btn elevation="0" text>
@@ -168,7 +205,6 @@
     <Footer />
   </v-app>
 </template>
-
 <script>
 import Footer from "./components/Footer";
 export default {
@@ -197,7 +233,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: "camronservice.com",
+      title: "Camron Service || Fast Secure",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -213,8 +249,8 @@ export default {
 };
 </script>
 <style lang="scss">
-.v-application ul{
-padding-left: 0px;
+.v-application ul {
+  padding-left: 0px;
 }
 .skiptranslate {
   display: none;
