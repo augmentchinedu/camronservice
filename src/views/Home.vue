@@ -106,7 +106,8 @@
         </v-col>
       </v-row>
     </div>
-    <div class="container">
+    <div class="container text-center">
+      <h1 class="">Reviews</h1>
       <Reviews/>
     </div>
     <Contact />

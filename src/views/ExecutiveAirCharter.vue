@@ -4,7 +4,7 @@
       <v-img src="../assets/images/slider/1.jpg" height="400">
       </v-img>
     </v-row>
-    <v-row>
+    <v-row class="my-16">
       <v-col cols="10" class="mx-auto">
         <div class="text-center">
           <h1>Executive Air Charter Services</h1>

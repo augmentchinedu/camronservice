@@ -13,18 +13,21 @@
           <v-img src="../assets/images/moves-program-Banners.jpg">
             <v-row class="fill-height ma-0" align="center" justify="start">
               <v-col cols="12" md="7" class="ml-3 mt-2">
-                <h1 class="my-1 text-h3 font-weight-black text-center">
+                <h1 class="my-1 text-h3 font-weight-black text-center black--text">
                   DON’T FORGET TO TAKE US WITH YOU
                 </h1>
-                <p class="my-3 text-center">
+                <p class="my-3 text-center black--text">
                   Let us handle the security for your new home. We’ll upgrade
                   your system and keep providing the professional monitoring
                   that you trust.
                 </p>
                 <div class="text-center mx-auto">
-                  <v-btn class="my-1 mx-auto" elevation="1"
+                  <router-link to="/request-a-quote">
+<v-btn class="my-1 mx-auto" elevation="1"
                     >request a quote now</v-btn
                   >
+                  </router-link>
+                  
                 </div>
               </v-col>
             </v-row>

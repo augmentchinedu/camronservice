@@ -4,7 +4,7 @@
       <v-img src="../assets/images/about/5.jpg" height="400">
       </v-img>
     </v-row>
-    <v-row class="text-center">
+    <v-row class="text-center my-16">
       <v-col cols="10" class="mx-auto">
         <h1>Float Plane Services in Toronto, Muskoka Region and More</h1>
         <p>
